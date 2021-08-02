@@ -1,0 +1,1375 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css"
+        integrity="sha512-Q5FghnpxjBPgZOw6Qh2ZQ8a9fXdMeAI/PndxnLx9eCbj+Fm973p23OuRv2sx7FZyVD9mZaBs7ty1UuGxRqDzOw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <style>
+        @charset "UTF-8";
+
+        a,
+        abbr,
+        acronym,
+        address,
+        applet,
+        article,
+        aside,
+        audio,
+        b,
+        big,
+        blockquote,
+        body,
+        canvas,
+        caption,
+        center,
+        cite,
+        code,
+        dd,
+        del,
+        details,
+        dfn,
+        div,
+        dl,
+        dt,
+        em,
+        embed,
+        fieldset,
+        figcaption,
+        figure,
+        footer,
+        form,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        header,
+        hgroup,
+        html,
+        i,
+        iframe,
+        img,
+        ins,
+        kbd,
+        label,
+        legend,
+        li,
+        mark,
+        menu,
+        nav,
+        object,
+        ol,
+        output,
+        p,
+        pre,
+        q,
+        ruby,
+        s,
+        samp,
+        section,
+        small,
+        span,
+        strike,
+        strong,
+        sub,
+        summary,
+        sup,
+        table,
+        tbody,
+        td,
+        tfoot,
+        th,
+        thead,
+        time,
+        tr,
+        tt,
+        u,
+        ul,
+        var,
+        video {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            font-size: 100%;
+            font: inherit;
+            vertical-align: baseline
+        }
+
+        .clearfix::after,
+        .clearfix::before {
+            content: " ";
+            display: block
+        }
+
+        .clearfix::after {
+            clear: both
+        }
+
+        article,
+        aside,
+        details,
+        figcaption,
+        figure,
+        footer,
+        header,
+        hgroup,
+        menu,
+        nav,
+        section {
+            display: block
+        }
+
+        body {
+            line-height: 1
+        }
+
+        ol,
+        ul {
+            list-style: none
+        }
+
+        blockquote,
+        q {
+            quotes: none
+        }
+
+        blockquote:after,
+        blockquote:before,
+        q:after,
+        q:before {
+            content: '';
+            content: none
+        }
+
+        table {
+            border-collapse: collapse;
+            border-spacing: 0
+        }
+
+        * {
+            -webkit-box-sizing: border-box;
+            -ms-box-sizing: border-box;
+            box-sizing: border-box
+        }
+
+        .container {
+            max-width: 1024px;
+            margin: 0 auto
+        }
+
+        body {
+            background: url(./img/bg-body.png) no-repeat center 0;
+            background-size: cover;
+            color: #fff;
+            font-family: 'Raleway', sans-serif;
+            width: 100%;
+        }
+
+        .page-header {
+            position: relative
+        }
+
+        .particles-js {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -2
+        }
+
+        .sportman {
+            position: absolute;
+            z-index: -1;
+            top: 26px;
+            left: 8%
+        }
+
+        .header-right {
+            float: right;
+            text-align: center;
+            padding: 68px 0 0 0
+        }
+
+        .logo {
+            display: inline-block
+        }
+
+        .header-right_item-1 {
+            margin: 60px 0 0 0
+        }
+
+        .header-right_item-2 {
+            padding: 9px 4px 0 0
+        }
+
+        .header-right_item-3 {
+            padding: 7px 0 13px 0
+        }
+
+        .btn {
+            display: inline-block;
+            font-size: 31px;
+            color: #fff;
+            background: -webkit-gradient(linear, left top, right top, from(#e86565), to(#DE2B2B));
+            background: -webkit-linear-gradient(90deg, #D80000 0%, #C84B4B 0.01%, #DE2B2B 100%);
+            background: -o-linear-gradient(90deg, #D80000 0%, #C84B4B 0.01%, #DE2B2B 100%);
+            background: linear-gradient(90deg, #D80000 0%, #C84B4B 0.01%, #DE2B2B 100%);
+            border: 0;
+            letter-spacing: .5px;
+            padding: 28px 80px;
+            border-radius: 54px;
+            margin-right: -9px;
+            cursor: pointer;
+            -webkit-transition: all .2s ease-in-out;
+            -o-transition: all .2s ease-in-out;
+            transition: all .2s ease-in-out;
+            font-family: 'Roboto Condensed';
+            font-style: italic;
+            font-weight: bold;
+        }
+
+        .btn:hover {
+            opacity: .9
+        }
+
+        .main-page {
+            position: relative;
+            padding: 0 0 87px 0
+        }
+
+        .arrow {
+            position: absolute;
+            top: 213px;
+            left: -3.6%
+        }
+
+        .card {
+            position: absolute;
+            right: 3.1%;
+            top: 35px
+        }
+
+        .instruction_item {
+            float: left;
+            width: 32%;
+            position: relative
+        }
+
+        .instruction_number {
+            font-size: 84px;
+            position: absolute;
+            font-family: 'Roboto Condensed', sans-serif;
+            font-style: italic;
+            font-weight: bold;
+            font-color: linear-gradient(180deg, #F4F4F4 0%, rgba(255, 255, 255, 0.5) 100%);
+        }
+
+        .instruction_text {
+            font-size: 32px;
+            letter-spacing: .5px;
+            line-height: 1.25;
+            font-weight: bold;
+            font-style: italic;
+            text-transform: uppercase;
+        }
+
+        .span_main {
+            text-transform: uppercase;
+            font-style: italic;
+            font-weight: bold;
+        }
+
+        .instruction {
+            padding: 130px 0 0 0
+        }
+
+        .instr_item-1 {
+            padding: 36px 0 0 8.4%
+        }
+
+        .instr_item-2 {
+            padding: 8px 0 0 7.6%
+        }
+
+        .instr_item-3 {
+            padding: 0 0 0 4.7%
+        }
+
+        .number-1 {
+            top: 77%;
+            left: 25%;
+        }
+
+        .number-2 {
+            top: 66%;
+            left: 25%;
+        }
+
+        .number-3 {
+            top: 74%;
+            left: 20%;
+        }
+
+        .instr_text-1 {
+            padding: 45px 0 0 57px
+        }
+
+        .instr_text-2 {
+            padding: 49px 0 0 73px
+        }
+
+        .instr_text-3 {
+            padding: 43px 0 0 81px
+        }
+
+        .tagline {
+            font-size: 41px;
+            text-align: center;
+            padding: 158px 0 80px 1.4%;
+            letter-spacing: .6px;
+            position: relative
+        }
+
+        .br_tagline {
+            display: none
+        }
+
+        .tagline_top-element {
+            position: absolute;
+            top: 82px;
+            left: 50%;
+            -webkit-transform: translate(-50%);
+            -ms-transform: translate(-50%);
+            transform: translate(-50%)
+        }
+
+        .tagline_bottom-element {
+            position: absolute;
+            top: 249px;
+            left: 50%;
+            -webkit-transform: translate(-50%);
+            -ms-transform: translate(-50%);
+            transform: translate(-50%)
+        }
+
+        .tagline_left-fire {
+            position: absolute;
+            top: 22px;
+            left: -7.5%
+        }
+
+        .tagline_right-fire {
+            position: absolute;
+            top: 65px;
+            right: -7.5%
+        }
+
+        .advantages {
+            padding: 0 1% 0 5%
+        }
+
+        .advantages_item {
+            width: 24%;
+            float: left;
+            text-align: center
+        }
+
+        .advantages_icon {
+            background: url(./img/sprite-advantages.png) no-repeat;
+            height: 100px;
+            width: 100px;
+            display: inline-block
+        }
+
+        .advantages_text {
+            font-size: 16px;
+            padding: 29px 40px 0 36px;
+            line-height: 1.4;
+        }
+
+        .adv_icon-1 {
+            background-position: -21px 0;
+        }
+
+        .adv_icon-2 {
+            background-position: -157px 7px;
+        }
+
+        .adv_icon-3 {
+            background-position: -280px 5px;
+        }
+
+        .adv_icon-4 {
+            background-position: -404px 4px;
+        }
+
+        .coin-1 {
+            position: absolute;
+            left: 5.7%;
+            bottom: -.8%
+        }
+
+        .coin-2 {
+            position: absolute;
+            left: 15.9%;
+            bottom: -11.2%
+        }
+
+        .coin-3 {
+            position: absolute;
+            right: 22.5%;
+            bottom: -15.6%
+        }
+
+        .page-footer {
+            text-align: center
+        }
+
+        .btn_footer {
+            display: inline-block;
+            font-size: 32px;
+            color: #fff;
+            border: 0;
+            background: -webkit-gradient(linear, left top, right top, from(#0082FF), to(#0070AD));
+            background: -webkit-linear-gradient(90deg, #0082FF 0%, #0070AD 100%);
+            background: -o-linear-gradient(90deg, #0082FF 0%, #0070AD 100%);
+            background: linear-gradient(90deg, #0082FF 0%, #0070AD 100%);
+            padding: 28px 84px;
+            border-radius: 53px;
+            cursor: pointer;
+            -webkit-transition: all .2s ease-in-out;
+            -o-transition: all .2s ease-in-out;
+            transition: all .2s ease-in-out;
+            font-family: 'Roboto Condensed';
+            font-style: italic;
+            font-weight: bold;
+        }
+
+        .btn_footer:hover {
+            opacity: .8
+        }
+
+        .logo_footer {
+            padding: 70px 14px 0 0
+        }
+
+        @media only screen and (max-width:1650px) {
+            .card {
+                right: .6%;
+                top: 3px;
+                max-width: 18.5%
+            }
+
+            .arrow {
+                top: 201px;
+                left: -11.6%;
+                max-width: 26%
+            }
+        }
+
+        @media only screen and (max-width:1280px) {
+            .container {
+                max-width: 728px
+            }
+
+            .sportman {
+                left: -4.1%
+            }
+
+            .instr_item-1 {
+                padding-left: 1.2%
+            }
+
+            .instr_item-2 {
+                padding-left: 3.4%
+            }
+
+            .instr_item-3 {
+                padding-left: 1.1%
+            }
+
+            .number-1 {
+                left: 9.6%
+            }
+
+            .number-2 {
+                left: 16%
+            }
+
+            .number-3 {
+                left: 17.7%
+            }
+
+            .br_tagline {
+                display: block
+            }
+
+            .tagline {
+                padding-top: 134px;
+                padding-bottom: 99px;
+                line-height: 1.15
+            }
+
+            .tagline_left-fire {
+                left: -5.8%;
+                top: 14px
+            }
+
+            .tagline_right-fire {
+                right: -4.8%
+            }
+
+            .btn {
+                margin-right: -4px
+            }
+
+            .advantages {
+                padding: 0 18% 0 18%
+            }
+
+            .main-page {
+                padding-bottom: 29px
+            }
+
+            .advantages_item {
+                padding-bottom: 45px;
+                width: 50%
+            }
+
+            .coin-1 {
+                left: -1.7%;
+                bottom: 38.4%
+            }
+
+            .coin-2 {
+                left: 5.2%;
+                bottom: -4.5%
+            }
+
+            .coin-3 {
+                right: 7.8%;
+                bottom: -13.3%
+            }
+        }
+
+        @media only screen and (max-width:768px) {
+            body {
+                background-color: #12141b
+            }
+
+            .container {
+                max-width: 320px
+            }
+
+            .header-right {
+                padding: 9px 0 0 0
+            }
+
+            .logo_img {
+                max-width: 63%
+            }
+
+            .sportman {
+                left: 13.6%;
+                top: 45px;
+                max-width: 58%;
+            }
+
+            .word-1,
+            .word-2,
+            .word-3 {
+                max-width: 79%
+            }
+
+            .header-right_item-1 {
+                margin-top: 320px
+            }
+
+            .header-right_item-2 {
+                padding: 6px 0 0 0
+            }
+
+            .header-right_item-3 {
+                padding: 4px 0 18px 0
+            }
+
+            .btn {
+                margin-right: 3px;
+                font-size: 19px;
+                letter-spacing: .9px;
+                padding: 19px 31px
+            }
+
+            .arrow {
+                top: 46px;
+                left: -4.8%;
+                max-width: 37%
+            }
+
+            .card {
+                right: 4.8%;
+                top: -27px;
+                max-width: 26%
+            }
+
+            .instruction_item {
+                width: 100%
+            }
+
+            .instruction {
+                padding: 0
+            }
+
+            .instr_item-1 {
+                padding: 20px 0 0 10.6%
+            }
+
+            .instr_item-2 {
+                padding: 3px 0 0 13.4%
+            }
+
+            .instr_item-3 {
+                padding: 8px 0 0 9.1%
+            }
+
+            .number-1 {
+                left: 11.8%;
+                top: 78%;
+            }
+
+            .number-2 {
+                left: 17%;
+                top: 73%;
+            }
+
+            .number-3 {
+                left: 16.7%;
+                top: 73.1%;
+            }
+
+            .tagline {
+                font-size: 29px;
+                padding-top: 77px;
+                padding-bottom: 92px;
+                line-height: 1.15
+            }
+
+            .tagline_left-fire {
+                max-width: 45.4%;
+                top: -14px;
+                left: -45%
+            }
+
+            .tagline_right-fire {
+                max-width: 45.4%;
+                top: 26px;
+                left: 95%
+            }
+
+            .tagline_top-element {
+                max-width: 69%;
+                top: 38px
+            }
+
+            .tagline_bottom-element {
+                max-width: 69%;
+                top: 160px
+            }
+
+            .advantages {
+                padding: 0 14% 0 13%
+            }
+
+            .advantages_item {
+                padding-bottom: 37px;
+                width: 100%
+            }
+
+            .adv_item-2 {
+                padding-bottom: 40px
+            }
+
+            .adv_item-3 {
+                padding-bottom: 63px
+            }
+
+            .main-page {
+                padding-bottom: 23px
+            }
+
+            .btn_footer {
+                font-size: 24px;
+                padding: 20px 63px
+            }
+
+            .logo_footer {
+                padding: 54px 4px 0 0
+            }
+
+            .logo_bottom_img {
+                max-width: 78%
+            }
+
+            .coin-1 {
+                left: -39%;
+                bottom: 60.6%
+            }
+
+            .coin-2 {
+                left: -41.8%;
+                bottom: 11.5%
+            }
+
+            .coin-3 {
+                right: -7.1%;
+                bottom: 33.4%
+            }
+
+            #advantages {
+                font-size: 48px !important;
+            }
+        }
+
+        @media only screen and (max-width:600px) {
+            .tagline {
+                overflow: hidden
+            }
+        }
+
+        @media only screen and (max-width:468px) {
+            .sportman {
+                max-width: 80%;
+                left: 0% !important;
+            }
+
+            .arrow {
+                left: -12.8%
+            }
+
+            .card {
+                right: 1.8%;
+                top: 1px
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css"
+        integrity="sha512-Q5FghnpxjBPgZOw6Qh2ZQ8a9fXdMeAI/PndxnLx9eCbj+Fm973p23OuRv2sx7FZyVD9mZaBs7ty1UuGxRqDzOw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .span_insrt {
+            font-size: 32px;
+        }
+
+
+        canvas {
+            display: block;
+            vertical-align: bottom;
+        }
+
+        /* ---- particles.js container ---- */
+        #particles-js {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: 50% 50%;
+        }
+
+        /* ---- stats.js ---- */
+        .count-particles {
+            background: #000022;
+            position: absolute;
+            top: 48px;
+            left: 0;
+            width: 80px;
+            color: #13E8E9;
+            font-size: .8em;
+            text-align: left;
+            text-indent: 4px;
+            line-height: 14px;
+            padding-bottom: 2px;
+            font-family: Helvetica, Arial, sans-serif;
+            font-weight: bold;
+        }
+
+        .js-count-particles {
+            font-size: 1.1em;
+        }
+
+        #stats,
+        .count-particles {
+            -webkit-user-select: none;
+            margin-top: 5px;
+            margin-left: 5px;
+        }
+
+        #stats {
+            border-radius: 3px 3px 0 0;
+            overflow: hidden;
+        }
+
+        .count-particles {
+            border-radius: 0 0 3px 3px;
+        }
+
+        .bounceInUp {
+            font-size: 60px;
+        }
+
+        .advantage {
+            text-transform: capitalize !important;
+            font-family: 'Roboto Condensed', sans-serif;
+            font-size: 22px;
+        }
+    </style>
+    <style>
+        #main_button:hover,
+        #main_button:active {
+            box-shadow: 0 0 23px rgb(221 46 46);
+            opacity: 1;
+        }
+
+        #second_button:hover,
+        #second_button:active {
+            box-shadow: 0 0 23px #0072b5;
+            opacity: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- particles.js container -->
+    <div id="particles-js"></div>
+
+    <!-- HEADER -->
+    <header class="page-header">
+        <div class="container clearfix">
+            <img src="img/main_image.png" alt="sportman" class="sportman" data-xrange="100"
+                style="transform: translate3d(46.7092px, 0px, 0px);">
+            <div class="header-right">
+                <a href="#" class="logo">
+                    <img src="img/logo.png" alt="Logo" id="main_logo" class="logo_img">
+                </a>
+                <div class="header-right_item-1">
+                    <img src="img/word-1.png" alt="БИТВА" class="word-1">
+                </div>
+                <div class="header-right_item-2">
+                    <img src="img/word-2.png" alt="ЗА БОНУС" class="word-2">
+                </div>
+                <div class="header-right_item-3">
+                    <img src="img/word-3.png" alt="НАЧАЛАСЬ" class="word-3">
+                </div>
+                <a class="btn wow pulse animated" id="main_button" data-wow-iteration="infinite"
+                    style="visibility: visible; animation-iteration-count: infinite; animation-name: pulse;">CONTINUE</a>
+            </div>
+        </div>
+    </header>
+    <!-- END HEADER -->
+
+    <!-- SECTION MAIN-PAGE -->
+    <div class="main-page">
+        <img src="img/arrow.png" alt="Arrow" class="arrow wow bounceInLeft" data-wow-offset="200"
+            style="visibility: visible; animation-name: bounceInLeft;">
+        <img src="img/card.png" alt="Card" class="card wow bounceInRight" data-wow-offset="380"
+            style="visibility: visible; animation-name: bounceInRight;">
+        <div class="container">
+            <div class="instruction clearfix">
+                <div class="instruction_item instr_item-1 wow fadeInUp" data-wow-offset="400"
+                    style="visibility: visible; animation-name: fadeInUp;">
+                    <div class="instruction_number number-1">1</div>
+                    <div class="instruction_item_right">
+                        <img src="img/icon-1.png" alt="icon" class="instruction_icon">
+                        <div class="instruction_text instr_text-1"><span class="span_main span_insrt">REGISTER</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="instruction_item instr_item-2 wow fadeInUp" data-wow-offset="400" data-wow-delay="0.4s"
+                    style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInUp;">
+                    <div class="instruction_number number-2">2</div>
+                    <div class="instruction_item_right">
+                        <img src="img/icon-2.png" alt="icon" class="instruction_icon">
+                        <div class="instruction_text instr_text-2"><span
+                                class="span_main span_insrt">PLACE</span><br>YOUR BETS</div>
+                    </div>
+                </div>
+                <div class="instruction_item instr_item-3 wow fadeInUp" data-wow-offset="400" data-wow-delay="0.8s"
+                    style="visibility: visible; animation-delay: 0.8s; animation-name: fadeInUp;">
+                    <div class="instruction_number number-3">3</div>
+                    <div class="instruction_item_right">
+                        <img src="img/icon-3.png" alt="icon" class="instruction_icon">
+                        <div class="instruction_text instr_text-3"><span class="span_main span_insrt">Win</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tagline">
+                <img src="img/left-fire.png" alt="" class="tagline_left-fire">
+                <img src="img/right-fire.png" alt="" class="tagline_right-fire">
+                <p class="wow bounceInUp" data-wow-offset="150"
+                    style="visibility: visible; animation-name: bounceInUp;"><span class="span_main" id="advantages">Our
+                        advantages
+                </p>
+            </div>
+            <div class="advantages clearfix">
+                <div class="advantages_item adv_item-1 wow fadeInUp" data-wow-offset="150" data-wow-delay="1.2s"
+                    style="visibility: visible; animation-delay: 1.2s; animation-name: fadeInUp;">
+                    <div class="advantages_icon adv_icon-1"></div>
+                    <p class="advantages_text"><span class="span_main advantage">Safe deposits and the fastest
+                            withdrawals</span>
+                    </p>
+                </div>
+                <div class="advantages_item adv_item-2 wow fadeInUp" data-wow-offset="150" data-wow-delay="0.8s"
+                    style="visibility: visible; animation-delay: 0.8s; animation-name: fadeInUp;">
+                    <div class="advantages_icon adv_icon-2"></div>
+                    <p class="advantages_text"><span class="span_main advantage">
+                            Convenient game client for Mobile
+                            and Desktop</span></p>
+                </div>
+                <div class="advantages_item adv_item-3 wow fadeInUp" data-wow-offset="150" data-wow-delay="0.4s"
+                    style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInUp;">
+                    <div class="advantages_icon adv_icon-3"></div>
+                    <p class="advantages_text"> <span class="span_main advantage">English speaking
+                            support</span></p>
+                </div>
+                <div class="advantages_item adv_item-4 wow fadeInUp" data-wow-offset="150"
+                    style="visibility: visible; animation-name: fadeInUp;">
+                    <div class="advantages_icon adv_icon-4"></div>
+                    <p class="advantages_text"><span class="span_main advantage">
+                            Dollars game
+                            without software and bots</span></p>
+                </div>
+            </div>
+
+            <div class="coins">
+                <div class="coin-1 plaxify" data-xrange="40" data-yrange="40"
+                    style="transform: translate3d(18.6837px, -16.7339px, 0px);">
+                    <img src="img/coin-1.png" alt="coin" class="coin_img-1">
+                </div>
+                <div class="coin-2 plaxify" data-xrange="40" data-yrange="40" data-invert="true"
+                    style="transform: translate3d(-18.6837px, 16.7339px, 0px);">
+                    <img src="img/coin-2.png" alt="coin" class="coin_img-2">
+                </div>
+                <div class="coin-3 plaxify" data-xrange="40" data-yrange="40"
+                    style="transform: translate3d(18.6837px, -16.7339px, 0px);">
+                    <img src="img/coin-3.png" alt="coin" class="coin_img-3">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END MAIN-PAGE -->
+
+    <!-- FOOTER -->
+    <footer class="page-footer">
+        <div class="container">
+            <a class="btn_footer wow pulse animated" id="second_button" data-wow-iteration="infinite"
+                style="visibility: visible; animation-iteration-count: infinite; animation-name: pulse;">CONTINUE</a>
+            <div class="logo_footer">
+                <img src="img/logo-bottom.png" alt="Logo" class="logo_bottom_img">
+            </div>
+        </div>
+    </footer>
+    <!-- END FOOTER -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"
+        integrity="sha512-3P8rXCuGJdNZOnUx/03c1jOTnMn3rP63nBip5gOP2qmUh5YAdVAvFZ1E+QLZZbC1rtMrQb+mah3AfYW11RUrWA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"
+        integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> <!-- stats.js lib -->
+    <script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
+    <script>
+        (function ($) {
+
+            var maxfps = 25,
+                delay = 1 / maxfps * 1000,
+                lastRender = new Date().getTime(),
+                layers = [],
+                plaxActivityTarget = {},
+                motionDegrees = 30,
+                motionMax = 1,
+                motionMin = -1,
+                motionStartX = null,
+                motionStartY = null,
+                ignoreMoveable = false,
+                options = null;
+
+            var defaults = {
+                useTransform: true
+            };
+
+            // Public Methods
+            $.fn.plaxify = function (params) {
+                options = $.extend({}, defaults, params);
+                options.useTransform = (options.useTransform ? supports3dTransform() : false);
+
+                return this.each(function () {
+
+                    var layerExistsAt = -1;
+                    var layer = {
+                        "xRange": $(this).data('xrange') || 0,
+                        "yRange": $(this).data('yrange') || 0,
+                        "zRange": $(this).data('zrange') || 0,
+                        "invert": $(this).data('invert') || false,
+                        "background": $(this).data('background') || false
+                    };
+
+                    for (var i = 0; i < layers.length; i++) {
+                        if (this === layers[i].obj.get(0)) {
+                            layerExistsAt = i;
+                        }
+                    }
+
+                    for (var param in params) {
+                        if (layer[param] == 0) {
+                            layer[param] = params[param];
+                        }
+                    }
+
+                    layer.inversionFactor = (layer.invert ? -1 : 1); // inversion factor for calculations
+
+                    // Add an object to the list of things to parallax
+                    layer.obj = $(this);
+                    if (layer.background) {
+                        // animate using the element's background
+                        pos = (layer.obj.css('background-position') || "0px 0px").split(/ /);
+                        if (pos.length != 2) {
+                            return;
+                        }
+                        x = pos[0].match(/^((-?\d+)\s*px|0+\s*%|left)$/);
+                        y = pos[1].match(/^((-?\d+)\s*px|0+\s*%|top)$/);
+                        if (!x || !y) {
+                            // no can-doesville, babydoll, we need pixels or top/left as initial values (it mightbe possible to construct a temporary image from the background-image property and get the dimensions and run some numbers, but that'll almost definitely be slow)
+                            return;
+                        }
+                        layer.originX = layer.startX = x[2] || 0;
+                        layer.originY = layer.startY = y[2] || 0;
+                        layer.transformOriginX = layer.transformStartX = 0;
+                        layer.transformOriginY = layer.transformStartY = 0;
+                        layer.transformOriginZ = layer.transformStartZ = 0;
+
+                    } else {
+
+                        // Figure out where the element is positioned, then reposition it from the top/left, same for transform if using translate3d
+                        var position = layer.obj.position(),
+                            transformTranslate = get3dTranslation(layer.obj);
+
+                        layer.obj.css({
+                            'transform': transformTranslate.join() + 'px',
+                            'top': position.top,
+                            'left': position.left,
+                            'right': '',
+                            'bottom': ''
+                        });
+                        layer.originX = layer.startX = position.left;
+                        layer.originY = layer.startY = position.top;
+                        layer.transformOriginX = layer.transformStartX = transformTranslate[0];
+                        layer.transformOriginY = layer.transformStartY = transformTranslate[1];
+                        layer.transformOriginZ = layer.transformStartZ = transformTranslate[2];
+                    }
+
+                    layer.startX -= layer.inversionFactor * Math.floor(layer.xRange / 2);
+                    layer.startY -= layer.inversionFactor * Math.floor(layer.yRange / 2);
+
+                    layer.transformStartX -= layer.inversionFactor * Math.floor(layer.xRange / 2);
+                    layer.transformStartY -= layer.inversionFactor * Math.floor(layer.yRange / 2);
+                    layer.transformStartZ -= layer.inversionFactor * Math.floor(layer.zRange / 2);
+
+                    if (layerExistsAt >= 0) {
+                        layers.splice(layerExistsAt, 1, layer);
+                    } else {
+                        layers.push(layer);
+                    }
+
+                });
+            };
+
+            // Get the translate position of the element
+            //
+            // return 3 element array for translate3d
+            function get3dTranslation(obj) {
+                var translate = [0, 0, 0],
+                    matrix = obj.css("-webkit-transform") ||
+                        obj.css("-moz-transform") ||
+                        obj.css("-ms-transform") ||
+                        obj.css("-o-transform") ||
+                        obj.css("transform");
+
+                if (matrix !== 'none') {
+                    var values = matrix.split('(')[1].split(')')[0].split(',');
+                    var x = 0,
+                        y = 0,
+                        z = 0;
+                    if (values.length == 16) {
+                        // 3d matrix
+                        x = (parseFloat(values[values.length - 4]));
+                        y = (parseFloat(values[values.length - 3]));
+                        z = (parseFloat(values[values.length - 2]));
+                    } else {
+                        // z is not transformed as is not a 3d matrix
+                        x = (parseFloat(values[values.length - 2]));
+                        y = (parseFloat(values[values.length - 1]));
+                        z = 0;
+                    }
+                    translate = [x, y, z];
+                }
+                return translate;
+            }
+
+            // Check if element is in viewport area
+            //
+            // Returns boolean
+            function inViewport(element) {
+                if (element.offsetWidth === 0 || element.offsetHeight === 0) return false;
+
+                var height = document.documentElement.clientHeight,
+                    rects = element.getClientRects();
+
+                for (var i = 0, l = rects.length; i < l; i++) {
+
+                    var r = rects[i],
+                        in_viewport = r.top > 0 ? r.top <= height : (r.bottom > 0 && r.bottom <= height);
+
+                    if (in_viewport) return true;
+                }
+                return false;
+            }
+
+            // Check support for 3dTransform
+            //
+            // Returns boolean
+            function supports3dTransform() {
+                var el = document.createElement('p'),
+                    has3d,
+                    transforms = {
+                        'webkitTransform': '-webkit-transform',
+                        'OTransform': '-o-transform',
+                        'msTransform': '-ms-transform',
+                        'MozTransform': '-moz-transform',
+                        'transform': 'transform'
+                    };
+
+                document.body.insertBefore(el, null);
+
+                for (var t in transforms) {
+                    if (el.style[t] !== undefined) {
+                        el.style[t] = "translate3d(1px,1px,1px)";
+                        has3d = window.getComputedStyle(el).getPropertyValue(transforms[t]);
+                    }
+                }
+
+                document.body.removeChild(el);
+                return (has3d !== undefined && has3d.length > 0 && has3d !== "none");
+            }
+
+            // Determine if the device has an accelerometer
+            //
+            // returns true if the browser has window.DeviceMotionEvent (mobile)
+            function moveable() {
+                return (ignoreMoveable === true) ? false : window.DeviceOrientationEvent !== undefined;
+            }
+
+            // The values pulled from the gyroscope of a motion device.
+            //
+            // Returns an object literal with x and y as options.
+            function valuesFromMotion(e) {
+                x = e.gamma;
+                y = e.beta;
+
+                // Swap x and y in Landscape orientation
+                if (Math.abs(window.orientation) === 90) {
+                    var a = x;
+                    x = y;
+                    y = a;
+                }
+
+                // Invert x and y in upsidedown orientations
+                if (window.orientation < 0) {
+                    x = -x;
+                    y = -y;
+                }
+
+                motionStartX = (motionStartX === null) ? x : motionStartX;
+                motionStartY = (motionStartY === null) ? y : motionStartY;
+
+                return {
+                    x: x - motionStartX,
+                    y: y - motionStartY
+                };
+            }
+
+            // Move the elements in the `layers` array within their ranges,
+            // based on mouse or motion input
+            //
+            // Parameters
+            //
+            //  e - mousemove or devicemotion event
+            //
+            // returns nothing
+            function plaxifier(e) {
+                if (new Date().getTime() < lastRender + delay) return;
+                lastRender = new Date().getTime();
+
+                var leftOffset = (plaxActivityTarget.offset() != null) ? plaxActivityTarget.offset().left : 0,
+                    topOffset = (plaxActivityTarget.offset() != null) ? plaxActivityTarget.offset().top : 0,
+                    x = e.pageX - leftOffset,
+                    y = e.pageY - topOffset;
+
+                if (!inViewport(layers[0].obj[0].parentNode)) return;
+
+                if (moveable()) {
+                    if (e.gamma === undefined) {
+                        ignoreMoveable = true;
+                        return;
+                    }
+                    values = valuesFromMotion(e);
+
+                    // Admittedly fuzzy measurements
+                    x = values.x / motionDegrees;
+                    y = values.y / motionDegrees;
+                    // Ensure not outside of expected range, -1 to 1
+                    x = x < motionMin ? motionMin : (x > motionMax ? motionMax : x);
+                    y = y < motionMin ? motionMin : (y > motionMax ? motionMax : y);
+                    // Normalize from -1 to 1 => 0 to 1
+                    x = (x + 1) / 2;
+                    y = (y + 1) / 2;
+                }
+
+                var hRatio = x / ((moveable() === true) ? motionMax : plaxActivityTarget.width()),
+                    vRatio = y / ((moveable() === true) ? motionMax : plaxActivityTarget.height()),
+                    layer, i;
+
+                for (i = layers.length; i--;) {
+                    layer = layers[i];
+                    if (options.useTransform && !layer.background) {
+                        newX = layer.transformStartX + layer.inversionFactor * (layer.xRange * hRatio);
+                        newY = layer.transformStartY + layer.inversionFactor * (layer.yRange * vRatio);
+                        newZ = layer.transformStartZ;
+                        layer.obj
+                            .css({ 'transform': 'translate3d(' + newX + 'px,' + newY + 'px,' + newZ + 'px)' });
+                    } else {
+                        newX = layer.startX + layer.inversionFactor * (layer.xRange * hRatio);
+                        newY = layer.startY + layer.inversionFactor * (layer.yRange * vRatio);
+                        if (layer.background) {
+                            layer.obj
+                                .css('background-position', newX + 'px ' + newY + 'px');
+                        } else {
+                            layer.obj
+                                .css('left', newX)
+                                .css('top', newY);
+                        }
+                    }
+                }
+            }
+
+            $.plax = {
+                // Begin parallaxing
+                //
+                // Parameters
+                //
+                //  opts - options for plax
+                //    activityTarget - optional; plax will only work within the bounds of this element, if supplied.
+                //
+                //  Examples
+                //
+                //    $.plax.enable({ "activityTarget": $('#myPlaxDiv')})
+                //    # plax only happens when the mouse is over #myPlaxDiv
+                //
+                // returns nothing
+                enable: function (opts) {
+                    if (opts) {
+                        if (opts.activityTarget) plaxActivityTarget = opts.activityTarget || $(document.body);
+                        if (typeof opts.gyroRange === 'number' && opts.gyroRange > 0) motionDegrees = opts.gyroRange;
+                    } else {
+                        plaxActivityTarget = $(document.body);
+                    }
+
+                    plaxActivityTarget.bind('mousemove.plax', function (e) {
+                        plaxifier(e);
+                    });
+
+                    if (moveable()) {
+                        window.ondeviceorientation = function (e) { plaxifier(e); };
+                    }
+
+                },
+
+                // Stop parallaxing
+                //
+                //  Examples
+                //
+                //    $.plax.disable()
+                //    # plax no longer runs
+                //
+                //    $.plax.disable({ "clearLayers": true })
+                //    # plax no longer runs and all layers are forgotten
+                //
+                // returns nothing
+                disable: function (opts) {
+                    $(document).unbind('mousemove.plax');
+                    window.ondeviceorientation = undefined;
+                    if (opts && typeof opts.restorePositions === 'boolean' && opts.restorePositions) {
+                        for (var i = layers.length; i--;) {
+                            layer = layers[i];
+                            if (options.useTransform && !layer.background) {
+                                layer.obj
+                                    .css('transform', 'translate3d(' + layer.transformOriginX + 'px,' + layer.transformOriginY + 'px,' + layer.transformOriginZ + 'px)')
+                                    .css('top', layer.originY);
+                            } else {
+                                if (layers[i].background) {
+                                    layer.obj.css('background-position', layer.originX + 'px ' + layer.originY + 'px');
+                                } else {
+                                    layer.obj
+                                        .css('left', layer.originX)
+                                        .css('top', layer.originY);
+                                }
+                            }
+                        }
+                    }
+                    if (opts && typeof opts.clearLayers === 'boolean' && opts.clearLayers) layers = [];
+                }
+            };
+
+            if (typeof ender !== 'undefined') {
+                $.ender($.fn, true);
+            }
+
+        })(function () {
+            return typeof jQuery !== 'undefined' ? jQuery : ender;
+        }());
+    </script>
+    <script>
+        particlesJS("particles-js", { "particles": { "number": { "value": 200, "density": { "enable": false, "value_area": 800 } }, "color": { "value": "#FFA6A6" }, "shape": { "type": "circle", "stroke": { "width": 0, "color": "#000000" }, "polygon": { "nb_sides": 5 }, "image": { "src": "img/github.svg", "width": 100, "height": 100 } }, "opacity": { "value": 0.5, "random": true, "anim": { "enable": false, "speed": 1, "opacity_min": 0.1, "sync": false } }, "size": { "value": 2, "random": false, "anim": { "enable": false, "speed": 40, "size_min": 0.1, "sync": false } }, "line_linked": { "enable": false, "distance": 500, "color": "#ffffff", "opacity": 0.4, "width": 2 }, "move": { "enable": true, "speed": 6, "direction": "top", "random": false, "straight": false, "out_mode": "out", "bounce": false, "attract": { "enable": false, "rotateX": 600, "rotateY": 1200 } } }, "interactivity": { "detect_on": "canvas", "events": { "onhover": { "enable": false, "mode": "bubble" }, "onclick": { "enable": false, "mode": "repulse" }, "resize": true }, "modes": { "grab": { "distance": 400, "line_linked": { "opacity": 0.5 } }, "bubble": { "distance": 400, "size": 4, "duration": 0.3, "opacity": 1, "speed": 3 }, "repulse": { "distance": 200, "duration": 0.4 }, "push": { "particles_nb": 4 }, "remove": { "particles_nb": 2 } } }, "retina_detect": true });
+    </script>
+    <script type="text/javascript">
+        $(function () {
+            $('#second_button').on('click', function (e) {
+                $('html,body').stop().animate({ scrollTop: $('#main_logo').offset().top }, 1000);
+                e.preventDefault();
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $('.plaxify').plaxify();
+            $.plax.enable();
+
+            new WOW().init();
+        });
+    </script>
+</body>
+
+</html>
